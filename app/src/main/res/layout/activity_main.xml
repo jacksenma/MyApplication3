@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fjj.myapplication.MainActivity"
+    android:background="@drawable/we"
+    >
+
+    <TextView
+        android:id="@+id/applicationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AUTOTEST"
+        android:textColor="#ffffffff"
+        android:textSize="60sp"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <!--android:text="TestNote , TestCalander , TestMns , TestSSSS,TestNote , TestCalander , TestMns , TestSSSS"-->
+    <RelativeLayout
+        android:id="@+id/project"
+        android:layout_below="@id/applicationName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/projectText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"
+            android:textSize="30sp"
+            android:text="Project"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="30dp"
+            />
+        <TextView
+            android:id="@+id/projectText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"
+            android:textSize="30sp"
+            android:text="CMCC"
+            android:layout_alignParentRight="true"
+            android:layout_margin="30dp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/module"
+        android:layout_below="@id/project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/moduleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"
+            android:textSize="30sp"
+            android:text="Module"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="30dp"
+            />
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:background="@drawable/select"
+            android:layout_alignParentRight="true"
+            android:layout_margin="30dp"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/chosen"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/module"
+        android:text="TestNote , TestCalander , TestMns , TestSSSS,TestNote , TestCalander , TestMns , TestSSSS,"
+        android:textColor="#ffffffff"
+        android:background="@drawable/bg3"
+        android:layout_centerHorizontal="true"
+        android:padding="30dp"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        />
+
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:background="@drawable/start"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        />
+</RelativeLayout>
